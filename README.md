@@ -41,6 +41,8 @@ Además, una **Implementacion** debe poder responder a los siguientes métodos:
 distancia_total = 1 * 1 + 0 * 2 + 2 * 3 = 7
 ```
 
+> **_NOTA:_** Para esta etapa ya se crearon la clase Implementacion y algunos tests.
+
 ## Etapa 2
 
 En esta etapa vamos a continuar con la creación de **ImplementacionDispatcher**. Los *dispatchers* van a ser los encargados de guardar las distintas **Implementaciones** para un **symbolo** determinado.
@@ -49,9 +51,13 @@ Los *dispatchers*, al recibir el mensaje **ejecutar** con una cantidad variable 
 
 Para esta etapa, se pide que se puedan agregar nuevas implementaciones a un **ImplementacionDispatcher** y que se defina el método **ejecutar**.
 
+> **_NOTA:_** Para esta etapa ya se creó la clase ImplementacionDispatcher.
+
 ## Etapa 3
 
-En esta etapa queremos otorgarle a los ***modules*** y a las ***classes*** la capacidad de definir métodos *overloadeados*. Para esto se debe definir el método **overloadeado**, que recibe el *sym* del método, el array de clases y el bloque de código de la **Implementacion** que se quiere definir. Vale aclarar que luego de generar la(s) **Implementacion(es)** de un método, debo poder invocar dicho método con los diferentes tipos y/o cantidad de parámetros. Se deja un ejemplo del uso esperado:
+En esta etapa queremos otorgarle a los ***modules*** y a las ***classes*** la capacidad de definir métodos *overloadeados*. Para esto debemos agregar dicho método en la clase **Module**.
+
+El método **overloadeado**, recibe el *sym* del método, el array de clases y el bloque de código de la **Implementacion** que se quiere definir. Vale aclarar que luego de generar la(s) **Implementacion(es)** de un método, debo poder invocar dicho método con los diferentes tipos y/o cantidad de parámetros. Se deja un ejemplo del uso esperado:
 ```ruby=
 class StringUtil
     overloadeado :longitud, [String] do |s|
@@ -67,6 +73,8 @@ string_util = StringUtil.new
 string_util.longitud("Hola") # 4
 string_util.longitud("Hola", "Mundo!") # 10
 ```
+
+> **_NOTA:_** Para esta etapa ya se crearon la clase y algunos tests.
 
 ## BONUS: Etapa 4
 
