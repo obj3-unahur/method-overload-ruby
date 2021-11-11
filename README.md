@@ -74,7 +74,7 @@ string_util.longitud("Hola") # 4
 string_util.longitud("Hola", "Mundo!") # 10
 ```
 
-> **_NOTA:_** Para esta etapa ya se crearon la clase y algunos tests.
+> **_NOTA:_** Para esta etapa ya se creó el archivo module.rb.
 
 ## BONUS: Etapa 4
 
