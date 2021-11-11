@@ -33,7 +33,7 @@ Además, una **Implementacion** debe poder responder a los siguientes métodos:
 1. **cumple**: Que recibe una cantidad variable de parámetros y devuelve **true** solamente si los parámetros se consideran válidos según el array de clases.
 2. **ejecutar**: Que recibe una cantidad variable de parámetros y ejecuta el bloque con los parámetros recibidos.
 3. **distancia_total**: Que recibe una cantidad variable de parámetros y devuelve un número entero, que representa la distancia entre las clases de los parámetros y la clase del array de clases. Cada distancia individual debe ser multiplicada por su posición. A continuación hay un ejemplo:
-```ruby=
+```ruby
 # Si el array de clases es [Numeric, String, Object] y los parámetros [1.0, "Hola", "Mundo!"]
 # distancia_entre_1.0_y_Numeric = 1 ; posicion = 1 (1er elemento del array)
 # distancia_entre_"Hola"_y_String = 0 ; posicion = 2
@@ -58,7 +58,7 @@ Para esta etapa, se pide que se puedan agregar nuevas implementaciones a un **Im
 En esta etapa queremos otorgarle a los ***modules*** y a las ***classes*** la capacidad de definir métodos *overloadeados*. Para esto debemos agregar dicho método en la clase **Module**.
 
 El método **overloadeado**, recibe el *sym* del método, el array de clases y el bloque de código de la **Implementacion** que se quiere definir. Vale aclarar que luego de generar la(s) **Implementacion(es)** de un método, debo poder invocar dicho método con los diferentes tipos y/o cantidad de parámetros. Se deja un ejemplo del uso esperado:
-```ruby=
+```ruby
 class StringUtil
     overloadeado :longitud, [String] do |s|
         s.length
