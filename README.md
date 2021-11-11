@@ -38,7 +38,7 @@ Además, una **Implementacion** debe poder responder a los siguientes métodos:
 # distancia_entre_1.0_y_Numeric = 1 ; posicion = 1 (1er elemento del array)
 # distancia_entre_"Hola"_y_String = 0 ; posicion = 2
 # distancia_entre_"Mundo!"_y_Object = 2 ; posicion = 3
-distancia_total = 1 * 1 + 0 * 2 + 2 * 3 = 7
+distancia_total = 1 * 1 + 0 * 2 + 2 * 3 # = 7
 ```
 
 > **_NOTA:_** Para esta etapa ya se crearon la clase Implementacion y algunos tests.
@@ -55,9 +55,9 @@ Para esta etapa, se pide que se puedan agregar nuevas implementaciones a un **Im
 
 ## Etapa 3
 
-En esta etapa queremos otorgarle a los ***modules*** y a las ***classes*** la capacidad de definir métodos *overloadeados*. Para esto debemos agregar dicho método en la clase **Module**.
+En esta etapa queremos otorgarle a los ***modules*** y a las ***classes*** la capacidad de definir métodos *overloadeados*. Para esto debemos agregar un método en la clase **Module**.
 
-El método **overloadeado**, recibe el *sym* del método, el array de clases y el bloque de código de la **Implementacion** que se quiere definir. Vale aclarar que luego de generar la(s) **Implementacion(es)** de un método, debo poder invocar dicho método con los diferentes tipos y/o cantidad de parámetros. Se deja un ejemplo del uso esperado:
+El método **overloadeado** recibe el *symbol* del método, el array de clases y el bloque de código de la **Implementacion** que se quiere definir. Vale aclarar que luego de generar la(s) **Implementacion(es)** de un método, debo poder invocarlo con los diferentes tipos y/o cantidad de parámetros. Se deja un ejemplo del uso esperado:
 ```ruby
 class StringUtil
     overloadeado :longitud, [String] do |s|
